@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link  rel="stylesheet"  href="style1.css">
+    <link rel="icon" href="gdg.png.jpeg">
+</head>
+<body>
+    <header>
+
+        <nav>
+                <div class="logo">
+                <!-- <a href="https://gdghit.dev"><img src="gdg.png.jpeg" alt="GDG Logo"></a> -->
+                    <img src="gdg1.png.jpeg" alt="GDG Logo">
+                    <div class="logo-text"> 
+                         <p class="para1">Google Developer Group</p>
+                         <p class="para2"><a href="https://gdghit.dev">On Campus </a> Haldia Institute of Technology</p>
+                    </div>
+                </div>
+                <div class="search-bar">
+                     <ul>
+                        <li><a href="https://gdghit.dev">Home</a></li>
+                        <li><a href="https://gdghit.dev/events">Events</a></li>
+                        <li><a href="https://gdghit.dev/members">Members</a></li>
+                        <li><a href="https://gdghit.dev/about-us">About Us</a></li>
+                        <li><a href="https://gdghit.dev/contact-us">Contact Us</a></li>
+                        <li><button id="login-btn">Login</button></li>
+                    </ul>
+                </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="membersection">
+                <div class="title">
+                    <p>The <span>Faces</span> Behind GDG HIT</p>
+                </div>
+                <p class="sub-title"> Get to know the passionate leaders driving GDG HIT, fostering innovation,
+                    <br> collaboration, and growth within our tech community. </p>
+                <div class="teams">
+                    <button > Faculty Co-ordinator</button>
+                    <button onclick="filterData('founder')"> Founder</button>
+                    <button > Core Team</button>
+                    <button onclick="filterData('TechTeam')">Tech Team</button>
+                    <button onclick="filterData('Media Team')">Media Team</button>
+                    <button onclick="filterData('PR Team')">PR Team</button>
+                </div>       
+         </section> 
+         <section class="team">
+            <h1> Founder</h1>
+            <div class="team_container" id="teamContainer">
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <div class="foot">
+            <hr>
+            <p>&copy; 2026 GDG On Campus HIT. All rights reserved.</p>
+            <p>Made with ❤️ by GDG HIT Team</p>
+        </div>
+    </footer>
+
+</body>
+</html>
