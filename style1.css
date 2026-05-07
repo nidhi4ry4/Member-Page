@@ -12,6 +12,7 @@ body{
     color: #ffffff;
 }
 nav{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,12 +20,12 @@ nav{
     position: fixed;
     top:0px;
     background-color: #000000;
-    padding: 0 0 4px 0;
+    padding: 10px 5%;
 }
 .logo{
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 10px;
     gap: 10px;
 }
@@ -47,11 +48,13 @@ nav{
 }
 .search-bar ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
     align-items: center;
     flex-direction: row;
     list-style: none;
     gap: 20px;
-    margin-right: 100px;
+    margin-right: 0px;
 }
 .search-bar ul a {
     color: #ffffff;
@@ -78,7 +81,7 @@ nav{
     margin-top: 105px;
 }
 .title p{
-    font-size: 60px;
+    font-size: clamp(28px, 5vw, 60px);
     font-weight : 600;
     background-image: linear-gradient(to bottom, white,rgb(232, 229, 229) ,grey);
     background-clip: text;
@@ -98,6 +101,8 @@ nav{
 .teams{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .teams button{
     border-radius: 28px;
@@ -120,7 +125,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-    padding: 40px 80px  ;
+    padding: 20px  ;
     max-width: 1200px;
     margin: auto;
 }
@@ -166,7 +171,7 @@ nav{
     color: #a5a0a0;
     line-height: 1.4;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 } 
@@ -187,5 +192,39 @@ nav{
 .foot p:nth-of-type(1){
     margin-top: 20px;
 }
+@media (max-width: 768px) {
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .membersection {
+        margin-top: 140px;
+        padding: 0 10px;
+    }
+
+    .sub-title {
+        font-size: 14px;
+    }
+
+    .teams button {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
